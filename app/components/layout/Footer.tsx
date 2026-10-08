@@ -2,8 +2,17 @@
 
 import React from 'react';
 import { ArrowUpRight, Mail } from 'lucide-react';
+import { useEffect, useState } from "react";
+
+
 
 export default function Footer() {
+    const [year, setYear] = useState(2026);
+
+    useEffect(() => {
+        setYear(new Date().getFullYear());
+    }, []);
+
     const ecosystemLinks = [
         { name: 'Studio COKA', href: '#studio' },
         { name: 'ELEvated Design', href: '#ecosystem' },
@@ -466,7 +475,7 @@ export default function Footer() {
                         "
                     >
                         <p>
-                            © {new Date().getFullYear()} Crystal Kizor
+                            © {year} Crystal Kizor
                         </p>
 
                         <p>
