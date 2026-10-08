@@ -1,4 +1,4 @@
-import type { Metadata } from "metadata";
+import type { Metadata } from "next";
 import { Cormorant_Garamond, Inter } from "next/font/google";
 import Header from "@/app/components/layout/Header";
 import Footer from "@/app/components/layout/Footer";
